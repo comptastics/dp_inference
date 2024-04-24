@@ -6,26 +6,15 @@ This directory contains code for performing differential privacy inference using
 
 To set up and install the `dp_inference` conda environment, follow these steps:
 
-1. Create the conda environment from the `environment.yml` file:
-
     ```shell
-    conda env create -f environment.yml
-    ```
+    conda create -n dp_inference python=3.10
 
-    This will create a new conda environment named `dp_inference` with all the necessary dependencies.
+    conda install numpy scipy scikit-learn matplotlib cvxpy pandas -c conda-forge
 
-2. Activate the `dp_inference` environment:
+    pip install folktables
 
-    ```shell
-    conda activate dp_inference
-    ```
-
-    You are now ready to use the `dp_inference` package for differential privacy inference.
-
-3. Next, use the following command to the dp_inference package locally:
-    
-    ```shell
     pip install -e .
+
     ```
 
 

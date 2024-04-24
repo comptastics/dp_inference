@@ -27,3 +27,9 @@ To set up and install the `dp_inference` conda environment, follow these steps:
     ```shell
     pip install -e .
     ```
+
+
+The code uses multiprocessing to correctly run on a linux environment, To run it without multiprocessing, change the corresponding script files. The dp_inference folder contains the main functions implementing the algorithms and the scripts folder containts scripts that call those functions to run the experiments in the paper. An example command to run the code is:
+    ```shell
+    python scripts/one_dim_methods.py 
+    ```
